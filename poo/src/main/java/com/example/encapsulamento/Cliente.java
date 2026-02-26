@@ -5,6 +5,14 @@ public class Cliente {
     private String nome;
     private int idade;   
 
+
+    //CONSTRUTOR
+    public Cliente(int idade, String nome) {
+    this.idade = idade;
+        this.nome = nome;
+    }
+
+
     //MÉTODOS DE ACESSO.
     public String getNome() {
         return nome;

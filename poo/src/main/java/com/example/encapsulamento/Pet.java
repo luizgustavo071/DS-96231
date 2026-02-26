@@ -1,11 +1,24 @@
 package com.example.encapsulamento;
 
 public class Pet {
-    //ATRIBUTOS DA CLASSE.
+    //ATRIBUTOS
     private String nome;
-    private int idade;  
+    private int idade;
+    private String raca;
+    private String porte;
+    private String alimentacao;
 
-    //MÉTODOS DE ACESSO.
+    //CONSTRUTORES
+
+    public Pet(String alimentacao, int idade, String nome, String porte, String raca) {
+        this.alimentacao = alimentacao;
+        this.idade = idade;
+        this.nome = nome;
+        this.porte = porte;
+        this.raca = raca;
+    }
+    
+    //MÉTODOS
     public String getNome() {
         return nome;
     }
@@ -22,7 +35,30 @@ public class Pet {
         this.idade = idade;
     }
 
+    public String getRaca() {
+        return raca;
+    }
 
-        
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
+
+    public String getPorte() {
+        return porte;
+    }
+
+    public void setPorte(String porte) {
+        this.porte = porte;
+    }
+
+    public String getAlimentacao() {
+        return alimentacao;
+    }
+
+    public void setAlimentacao(String alimentacao) {
+        this.alimentacao = alimentacao;
+    }
+
+    
 
 }
